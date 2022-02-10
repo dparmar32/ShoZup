@@ -11,12 +11,13 @@
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
-- [User Story](#user-story)
+- [User Story 📖](#user-story-)
 - [Acceptance Criteria](#acceptance-criteria)
-- [Tools Used](#tools-used)
+- [Tools Used 🛠](#tools-used-)
 - [Deployment](#deployment)
 - [Wireframe](#wireframe)
-- [Installation](#installation)
+- [Installation 💾](#installation-)
+- [References](#references)
 - [Contributing](#contributing)
 
 
@@ -73,8 +74,7 @@ ShoZup is an app where all users can buy and/or sell new or used shoes to other 
 ![Wireframe2](Pictures/Wireframe2.jpg)
 
 
-## Installation
-💾   
+## Installation 💾   
 
 `npm init`
 
@@ -82,6 +82,10 @@ ShoZup is an app where all users can buy and/or sell new or used shoes to other 
 
 Dependencies: express, express-handlebars, express-session, mysql2, sequelize.
 
+## References
+- [Node](https://nodejs.org/api/)
+- [NPM Packages](https://www.npmjs.com/)
+  
 ## Contributing
 ✉️ Contact us with any questions: 
 * [Maria Cardona](https://github.com/mechas8703)
