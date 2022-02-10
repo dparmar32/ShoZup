@@ -12,9 +12,10 @@
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
 - [Tools Used](#tools-used)
 - [Deployment](#deployment)
-- [Acceptance Criteria](#acceptance-criteria)
+- [Wireframe](#wireframe)
 - [Installation](#installation)
 - [Contributing](#contributing)
 
@@ -24,18 +25,6 @@
 ```
 ShoZup is an app where all users can buy and/or sell new or used shoes to other users.
 ```
-
-## Tools Used 🛠
-- [Trello]()
-- [Presentation]()
-- [Wireframe]()
-
-
-## Deployment
-
-- [Github](https://github.com/dparmar32/ShoZup)
-- [Heroku]()
-
 ## Acceptance Criteria
 
 ```
@@ -67,6 +56,22 @@ ShoZup is an app where all users can buy and/or sell new or used shoes to other 
 
 - Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 ```
+
+## Tools Used 🛠
+- [Trello]()
+- [Presentation]()
+- [Wireframe]()
+
+
+## Deployment
+
+- [Github](https://github.com/dparmar32/ShoZup)
+- [Heroku](https://shozup.herokuapp.com/)
+
+## Wireframe
+![Wireframe1](Pictures/Wireframe1.jpg)
+![Wireframe2](Pictures/Wireframe2.jpg)
+
 
 ## Installation
 💾   
