@@ -3,7 +3,10 @@ const express = require('express');
 const routes = require('./routes');
 const Sequelize = require("sequelize");
 
-const Joi = require('joi');
+const mongoose = require('mongoose'); //to encrypt password, adding more security to our users
+// const Joi = require('joi');
+
+
 
 
 // Import the connection object
