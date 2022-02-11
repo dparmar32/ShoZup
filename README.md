@@ -79,6 +79,7 @@ ShoZup is an app where all users can buy and/or sell new or used shoes to other 
 `npm init`
 
 `npm install`
+`npm run seed`
 
 Dependencies: express, express-handlebars, express-session, mysql2, sequelize.
 
