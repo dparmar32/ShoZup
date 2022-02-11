@@ -16,6 +16,7 @@
 - [Tools Used 🛠](#tools-used-)
 - [Deployment](#deployment)
 - [Wireframe](#wireframe)
+- [Databases](#databases)
 - [Installation 💾](#installation-)
 - [References](#references)
 - [Contributing](#contributing)
@@ -73,6 +74,10 @@ ShoZup is an app where all users can buy and/or sell new or used shoes to other 
 ![Wireframe1](Pictures/Wireframe1.jpg)
 ![Wireframe2](Pictures/Wireframe2.jpg)
 
+## Databases
+![db_layout](Pictures/db_layout.jpg)
+![catalog_table](Pictures/category_table.jpg)
+![product_table](Pictures/product_table.jpg)
 
 ## Installation 💾   
 
