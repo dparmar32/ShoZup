@@ -1,5 +1,6 @@
 // imports
 const seedCategories = require('./category-seeds');
+const seedProducts = require('./product-seeds');
 
 const sequelize = require('../config/connection');
 
@@ -12,6 +13,9 @@ const seedAll = async () => {
     /* It calls the function `seedCategories` which is defined in `./category-seeds.js` */
     await seedCategories();
     console.log('\n----- CATEGORIES SEEDED -----\n');
+
+    await seedProducts();
+    console.log('\n----- PRODUCTS SEEDED -----\n');
 
     process.exit(0);
 };
