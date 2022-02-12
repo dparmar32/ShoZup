@@ -11,13 +11,13 @@
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
-- [User Story 📖](#user-story-)
+- [User Story](#user-story-)
 - [Acceptance Criteria](#acceptance-criteria)
-- [Tools Used 🛠](#tools-used-)
+- [Tools Used](#tools-used-)
 - [Deployment](#deployment)
 - [Wireframe](#wireframe)
 - [Databases](#databases)
-- [Installation 💾](#installation-)
+- [Installation](#installation)
 - [References](#references)
 - [Contributing](#contributing)
 
