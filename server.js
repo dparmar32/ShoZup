@@ -3,7 +3,8 @@ const express = require('express');
 const routes = require('./routes');
 const Sequelize = require("sequelize");
 
-const mongoose = require('mongoose'); //to encrypt password, adding more security to our users
+const mongoose = require('mongoose'); //manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB
+const bcrypt = require('bcrypt') //to encrypt password, adding more security to our users
 // const Joi = require('joi');
 
 
