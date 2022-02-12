@@ -3,8 +3,8 @@ const express = require('express');
 const routes = require('./routes');
 const Sequelize = require("sequelize");
 
-// const Joi = require('joi');
-const mongoose = require('mongoose')
+
+const mongoose = require('mongoose') 
 const bcrypt = require('bcrypt')
 
 //Create a new user model//
