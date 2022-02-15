@@ -2,8 +2,8 @@
 The middleware function is executed for every request that is handled by the application.
 The middleware function is used to register routes with the router. */
 const router = require('express').Router();
-const categoryRoutes = require('./category-routes');
-const productRoutes = require('./product-routes');
+const categoryRoutes = require('./category');
+const productRoutes = require('./product');
 
 
 

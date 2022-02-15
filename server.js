@@ -14,7 +14,7 @@ const bcrypt = require('bcrypt') //to encrypt password, adding more security to 
 const sequelize = require('./config/connection');
 //set up express app
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 app.engine('handlebars',hbs.engine);
 app.set('view engine','handlebars');
