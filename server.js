@@ -1,6 +1,6 @@
 const fs = require('fs');
 const express = require('express');
-const routes = require('./routes');
+// const routes = require('./routes');
 const Sequelize = require("sequelize");
 const exphbs = require('express-handlebars')
 const hbs = exphbs.create({})
@@ -22,10 +22,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 //turn on routes
-app.use(routes);
+// app.use(routes);
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(require('./controllers/api/userRoutes.js'));
-app.use(require('./controllers/api/projectRoutes.js'));
+// app.use(require('./controllers/api/userRoutes.js'));
+// app.use(require('./controllers/api/projectRoutes.js'));
 
 // Connect to the database before starting the Express.js server
 // Starts the server to begin listening
