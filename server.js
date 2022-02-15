@@ -1,6 +1,6 @@
 const fs = require('fs');
 const express = require('express');
-// const routes = require('./routes');
+const routes = require('./routes');
 const Sequelize = require("sequelize");
 const exphbs = require('express-handlebars')
 const hbs = exphbs.create({})
@@ -17,7 +17,7 @@ const bcrypt = require('bcrypt') //to encrypt password, adding more security to 
 const sequelize = require('./config/connection');
 //set up express app
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 app.engine('handlebars',hbs.engine);
 app.set('view engine','handlebars');
@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 //turn on routes
-// app.use(routes);
+app.use(routes);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('./controllers/dish-routes.js'));
 
