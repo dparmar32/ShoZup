@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const express = require('express');
 // const routes = require('./routes');
@@ -13,7 +14,7 @@ const bcrypt = require('bcrypt') //to encrypt password, adding more security to 
 const sequelize = require('./config/connection');
 //set up express app
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 app.engine('handlebars',hbs.engine);
 app.set('view engine','handlebars');
@@ -24,12 +25,18 @@ app.use(express.urlencoded({extended: true}));
 //turn on routes
 // app.use(routes);
 app.use(express.static(path.join(__dirname, 'public')));
+<<<<<<< HEAD
 app.use(require('./controllers/api/userRoutes'));
 app.use(require('./controllers/api/projectRoutes'));
 app.use(require('./controllers/api/categoryRoutes'));
 
+=======
+// app.use(require('./controllers/api/userRoutes.js'));
+// app.use(require('./controllers/api/projectRoutes.js'));
+>>>>>>> a44f2daafd943f4d8bf6dbbe527c48495a9f4163
 
 // Connect to the database before starting the Express.js server
+
 // Starts the server to begin listening
 app.listen(PORT, () => {
     console.log('Server listening on: http://localhost:' + PORT);
