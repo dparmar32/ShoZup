@@ -24,8 +24,10 @@ app.use(express.urlencoded({extended: true}));
 //turn on routes
 // app.use(routes);
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(require('./controllers/api/userRoutes.js'));
-app.use(require('./controllers/api/projectRoutes.js'));
+app.use(require('./controllers/api/userRoutes'));
+app.use(require('./controllers/api/projectRoutes'));
+app.use(require('./controllers/api/categoryRoutes'));
+
 
 // Connect to the database before starting the Express.js server
 // Starts the server to begin listening
