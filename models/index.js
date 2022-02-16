@@ -1,4 +1,5 @@
 // import models
+const User = require('./User');
 const Category = require('./Category');
 const Product = require('./Product')
 
@@ -13,4 +14,4 @@ Category.hasMany(Product, {
     foreignKey: 'category_id',
         onDelete: 'SET NULL'
 });
-module.exports = {Category, Product};
+module.exports = {User, Category, Product};
