@@ -33,29 +33,13 @@ app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
-<<<<<<< HEAD
-//<<<<<<< HEAD
+
+app.use(routes);
 app.use(require('./controllers/api/userRoutes.js'));
 app.use(require('./controllers/api/productRoutes.js'));
 app.use(require('./controllers/api/categoryRoutes.js'));
 
-//=======
-// app.use(require('./controllers/api/userRoutes.js'));
-// app.use(require('./controllers/api/projectRoutes.js'));
-//>>>>>>> a44f2daafd943f4d8bf6dbbe527c48495a9f4163
-
-// Connect to the database before starting the Express.js server
-
-// Starts the server to begin listening
-app.listen(PORT, () => {
-    console.log('Server listening on: http://localhost:' + PORT);
-  });
-=======
-
-app.use(routes);
-
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening port 3001'));
 });
->>>>>>> 372b5fe707af6e3e4933b761db058a53f1f8b6a7
 
