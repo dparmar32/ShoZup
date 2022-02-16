@@ -35,9 +35,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
-app.use(require('./controllers/api/userRoutes.js'));
-app.use(require('./controllers/api/productRoutes.js'));
-app.use(require('./controllers/api/categoryRoutes.js'));
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening port 3001'));
