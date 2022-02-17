@@ -1,35 +1,28 @@
-header, .project:not(:last-child) {
-    border-bottom: 1px solid #ccc;
-    text-align: center;
-    background: #C6FFDD; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*header, .project:not(:last-child) {*/
+/*    border-bottom: 1px solid #ccc;*/
+/*    text-align: center;*/
+/*    background: #C6FFDD; !* fallback for old browsers *!*/
+/*    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); !* Chrome 10-25, Safari 5.1-6 *!*/
+/*    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
 
-}
+/*}*/
 
 
-header {
-    text-align: center;
-}
+/*main {*/
+/*    padding: 0 0 15px 0;*/
+/*}*/
 
-main {
-    padding: 0 0 15px 0;
-}
-
-footer {
-    text-align: center;
-}
 
 .comment-body {
     height: 120px;
     width: 590px;
 }
 
-.inv-head {
-    font-weight: bold;
-}
+/*.inv-head {*/
+/*    font-weight: bold;*/
+/*}*/
 
-a {
-    text-decoration: none;
-    color: black;
-}
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: black;*/
+/*}*/
