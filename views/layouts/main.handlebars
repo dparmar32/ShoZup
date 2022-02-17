@@ -1,38 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>ShoeZup</title>
 </head>
-
 <body>
-  <header>
-    <h1>Welcome to the ShoeZup</h1>
-  </header>
-  <nav>
-    <a href="/">Home</a>
-    <!-- If the user is logged in, show a logout button -->
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <!-- Otherwise, show a link to login -->
-    <a href="/login">Login</a>
-    {{/if}}
-  </nav>
-  <main>
- 
-    <div class="shozup">
-      {{{body}}}
-    </div>
-  </main>
-  <!-- If the user is logged in, load the JS script for when they logout -->
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
+    <!-- Header -->
+    <header>
+        <h1><i class="fas fa-glass-shoes"></i> Shoes </h1>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav m-auto">
+                <a class="nav-item nav-link" href="/">Home</a>
 
+                {{#if loggedIn}}
+                    <a class="nav-item nav-link" href="/profile">Profile</a>
+                    <a id="logout" class="nav-item nav-link">Logout</a>
+                {{else}}
+                    <a class="nav-item nav-link" href="/login">Login</a>
+                {{/if}}
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+    <!-- Main -->
+    <main class="p-3">
+        {{{ body }}}
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
+{{!-- <script src="/javascript/script.js"></script> --}}
+</body>
 </html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--  <meta charset="utf-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--  <title>ShoeZup 👟</title>-->
+<!--       &lt;!&ndash; Font Awesome &ndash;&gt;-->
+<!--    &lt;!&ndash; <script-->
+<!--      defer-->
+<!--      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"-->
+<!--    ></script> &ndash;&gt;-->
+<!--    <link-->
+<!--      rel="stylesheet"-->
+<!--      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"-->
+<!--    />-->
+<!--    <link-->
+<!--      rel="stylesheet"-->
+<!--      href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css"-->
+<!--    />-->
+<!--        &lt;!&ndash; Bootstrap Scripts &ndash;&gt;-->
+<!--    <script-->
+<!--      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"-->
+<!--      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"-->
+<!--      crossorigin="anonymous"-->
+<!--    ></script>-->
+<!--    <script-->
+<!--      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"-->
+<!--      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"-->
+<!--      crossorigin="anonymous"-->
+<!--    ></script>-->
+<!--    <script-->
+<!--      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"-->
+<!--      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"-->
+<!--      crossorigin="anonymous"-->
+<!--    ></script>-->
+<!--  <link rel="stylesheet" type="text/css" href="/css/jass.css">-->
+<!--  <link rel="stylesheet" type="text/css" href="/css/style.css">-->
+<!--</head>-->
+
+<!--<body>-->
+<!--  <header>-->
+<!--    <h1>Welcome to the ShoeZup 👟</h1>-->
+<!--  </header>-->
+<!--  <nav>-->
+<!--    <a href="/">Home</a>-->
+<!--    &lt;!&ndash; If the user is logged in, show a logout button &ndash;&gt;-->
+<!--    {{#if loggedIn}}-->
+<!--    <button id="logout" class="btn-no-style">Logout</button>-->
+<!--    {{else}}-->
+<!--    &lt;!&ndash; Otherwise, show a link to login &ndash;&gt;-->
+<!--    <a href="/login">Login</a>-->
+<!--    {{/if}}-->
+<!--  </nav>-->
+<!--  <main>-->
+<!-- -->
+<!--    <div class="shozup">-->
+<!--      {{{body}}}-->
+<!--    </div>-->
+<!--  </main>-->
+<!--  &lt;!&ndash; If the user is logged in, load the JS script for when they logout &ndash;&gt;-->
+<!--  {{#if loggedIn}}-->
+<!--  <script src="/js/logout.js"></script>-->
+<!--  {{/if}}-->
+<!--</body>-->
+
+<!--</html>-->
