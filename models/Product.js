@@ -15,17 +15,32 @@ Product.init
             primaryKey: true,
             autoIncrement: true,
         },
-        product_name: {
+        name: {
             type: DataTypes.STRING
+        },
+        description: {
+            type: DataTypes.STRING,
+        },
+        date_created: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW,
         },
         price: {
             type: DataTypes.DECIMAL(10, 2),
             validate: {
                 isDecimal: true
             }
-        }
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id',
+            },
+        },
     },
-        {
+    {
         sequelize,
         timestamps: false,
         freezeTableName: true,
