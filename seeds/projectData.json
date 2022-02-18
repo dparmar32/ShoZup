@@ -2,18 +2,21 @@
   {
     "name": "Nike",
     "description": "Men's Waffle One SE Casual Sneakers from Finish Line",
+    "img": "Coach.PNG",
     "size": "12",
     "price": 110
   },
   {
     "name": "Sperry",
     "description": "Women's Saltwater Duck Booties, Created for Macy's",
+    "img": "Sperry.PNG",
     "size": "8",
     "price": 120
   },
   {
     "name": "Timberland",
     "description": "Davis Men's Square Chukka",
+    "img": "Timberland.PNG",
     "size": "10",
     "price": 99
   }

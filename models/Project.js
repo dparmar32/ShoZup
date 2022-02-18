@@ -40,7 +40,6 @@ Project.init(
         img: {
             // LONGBLOB
             type: DataTypes.STRING,
-
         }
     },
     {
