@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS shoezup_db;
+CREATE DATABASE shoezup_db;

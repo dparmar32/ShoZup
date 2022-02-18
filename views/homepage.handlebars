@@ -1,0 +1,24 @@
+<!-- Loop over each object in the projects array -->
+{{#each projects as |project| }}
+    <div class="row mb-4 project">
+        <div class="col-md-5">
+
+  <img src="./pictures/Timberland.PNG"></img>
+
+<!--            <img src="/pictures/Coach.PNG" alt="Coach" width="500" height="600">-->
+
+
+<!--            <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>-->
+        </div>
+        <div class="col-md-7">
+
+            <ul style="list-style-type:none;">
+                <Strong><li>{{project.name}}</li></Strong>
+
+                <li>{{project.description}}</li>
+                <li>{{project.size}}</li>
+                <li>{{project.price}}</li>
+            </ul>
+        </div>
+    </div>
+{{/each}}
