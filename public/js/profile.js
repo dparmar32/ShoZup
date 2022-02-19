@@ -4,11 +4,12 @@ const newFormHandler = async (event) => {
   const name = document.querySelector('#project-name').value.trim();
   const size = document.querySelector('#project-size').value.trim();
   const description = document.querySelector('#project-desc').value.trim();
+  const price = document.querySelector('#project-price').value.trim();
 // commit out this section
   if (name && size && description) {
     const response = await fetch(`/api/projects`, {
       method: 'POST',
-      body: JSON.stringify({ name, size, description }),
+      body: JSON.stringify({ name, size, description, price }),
       headers: {
         'Content-Type': 'application/json',
       },
