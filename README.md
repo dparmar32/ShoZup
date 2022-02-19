@@ -71,13 +71,12 @@ ShoZup is an app where all users can buy and/or sell new or used shoes to other 
 - [Heroku](https://shozup.herokuapp.com/)
 
 ## Wireframe
-![Wireframe1](Pictures/Wireframe1.jpg)
-![Wireframe2](Pictures/Wireframe2.jpg)
+![Wireframe1](public/pictures/Wireframe1.jpg)
+![Wireframe2](public/pictures/Wireframe2.jpg)
 
 ## Databases
-![db_layout](Pictures/db_layout.jpg)
-![catalog_table](Pictures/category_table.jpg)
-![product_table](Pictures/product_table.jpg)
+![db_layout](public/pictures/db_layout.jpg)
+![product_table](public/pictures/product_table.jpg)
 
 ## Installation 💾   
 
