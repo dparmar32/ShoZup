@@ -38,7 +38,8 @@ h1 {
 }
 
 tbody {
-    color: #65C18C;
+    color: #357C3C;
+    font-size: 1.25em;
 
 }
 
@@ -427,7 +428,7 @@ button {
 a {
     /*color: #1b89bc;*/
     text-decoration: none;
-    color: #65C18C;
+    color: #357C3C;
 
 
 }
