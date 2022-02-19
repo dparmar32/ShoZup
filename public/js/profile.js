@@ -1,28 +1,28 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  // const name = document.querySelector('#project-name').value.trim();
-  const needed_funding = document.querySelector('#project-funding').value.trim();
+  const name = document.querySelector('#project-name').value.trim();
+  const size = document.querySelector('#project-size').value.trim();
   const description = document.querySelector('#project-desc').value.trim();
-
-  // if (name && needed_funding && description) {
-  //   const response = await fetch(`/api/projects`, {
+// commit out this section
+  if (name && size && description) {
+    const response = await fetch(`/api/projects`, {
+      method: 'POST',
+      body: JSON.stringify({ name, size, description }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  
+  // if(brand && size && description){
+  //   const response = await fetch(`/test/`, {
   //     method: 'POST',
-  //     body: JSON.stringify({ name, needed_funding, description }),
+  //     body: JSON.stringify({ brand, size, description }),
   //     headers: {
   //       'Content-Type': 'application/json',
   //     },
   //   });
   // }
-  if(brand && size && description){
-    const response = await fetch(`/test/`, {
-      method: 'POST',
-      body: JSON.stringify({ brand, size, description }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-  }
     
     if (response.ok) {
       document.location.replace('/profile');
@@ -30,7 +30,7 @@ const newFormHandler = async (event) => {
       alert('Failed to create project');
     }
   }
-// };
+};
 
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
@@ -52,6 +52,6 @@ document
   .querySelector('.new-project-form')
   .addEventListener('submit', newFormHandler);
 
-// document
-//   .querySelector('.project-list')
-//   .addEventListener('click', delButtonHandler);
+document
+  .querySelector('.project-list')
+  .addEventListener('click', delButtonHandler);
