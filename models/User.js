@@ -36,6 +36,8 @@ User.init(
       },
     },
   },
+
+  //encrypting password
   {
     hooks: {
       beforeCreate: async (newUserData) => {
