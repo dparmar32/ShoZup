@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Project } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+/* create a new project in the database. */
 router.post('/', withAuth, async (req, res) => {
   try {
     const newProject = await Project.create({
@@ -15,6 +16,7 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+/* delete a project from the database. */
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const projectData = await Project.destroy({

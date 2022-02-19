@@ -8,6 +8,7 @@ class User extends Model {
   }
 }
 //set up User Table
+/* This is the sequelize syntax for creating a table. */
 User.init(
   {
     id: {

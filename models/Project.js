@@ -4,6 +4,7 @@ const sequelize = require('../config/connection');
 class Project extends Model {
 }
 
+/* This is the sequelize syntax for creating a model. */
 Project.init(
     {
         id: {
