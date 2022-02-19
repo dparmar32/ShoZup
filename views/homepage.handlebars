@@ -7,24 +7,39 @@
                 <!--                {{{project.img}}}-->
                 <a href="/project/{{project.id}}">{{project.name}}</a>
             </h2>
-            <img src="./pictures/{{project.img}}" width="300"
-                 height="300"></img>
+            <img src="./pictures/{{project.img}}" width="200"
+                 height="200"></img>
             <!--            <img src="/pictures/Coach.PNG" alt="Coach" width="500" height="600">-->
             <!--            <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>-->
         </div>
         <div class="col-md-7">
+            <table>
+                <tbody>
+                    <td>Description:</td>
+                    <td>{{project.description}}</td>
+                </tbody>
+                <tbody>
+                    <td>Size:</td>
+                    <td>{{project.size}}</td>
+                </tbody>
+                <tbody>
+                    <td>Price:</td>
+                    <td>${{project.price}}</td>
+                </tbody>
+            </table>
 
-            <ul style="list-style-type:none;">
-                <!--                <Strong>-->
-                <!--                    <li>{{project.name}}</li>-->
-                <!--                </Strong>-->
 
-                <li>{{project.description}}</li>
-                <li>{{project.size}}</li>
-                <label for="project-funding">$ {{project.price}}</label>
+<!--            <ul style="list-style-type:none;">-->
+<!--                &lt;!&ndash;                <Strong>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <li>{{project.name}}</li>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </Strong>&ndash;&gt;-->
 
-<!--                <li>{{project.img}}</li>-->
-            </ul>
+<!--                <li>{{project.description}}</li>-->
+<!--                <li>{{project.size}}</li>-->
+<!--                <label for="project-funding">$ {{project.price}}</label>-->
+
+<!--                &lt;!&ndash;                <li>{{project.img}}</li>&ndash;&gt;-->
+<!--            </ul>-->
         </div>
     </div>
 {{/each}}
